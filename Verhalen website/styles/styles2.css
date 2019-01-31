@@ -1,0 +1,197 @@
+   /* Navigatie header */
+
+   body {
+       margin: 0;
+       font-family: roboto;
+       background-color: lightgrey;
+   }
+
+   h1 {
+       display: none;
+   }
+
+   nav > ul {
+       display: flex;
+       flex-direction: row;
+       background-color: #665B53;
+       padding: 0;
+       margin: 0;
+       justify-content: space-between;
+
+   }
+
+   nav > ul > li {
+       font-size: 4em;
+       padding: 0;
+       list-style: none;
+   }
+
+   nav > ul > li img {
+       height: 40px;
+       width: 60px;
+   }
+
+   /* Verhaal pagina */
+
+   div {
+       padding: 1em;
+       background-color: lightgrey;
+   }
+
+   div button {
+       margin-left: 6em;
+   }
+
+   div button:hover {
+       background-color: #E66F1F;
+   }
+
+
+   footer {
+       background-color: white;
+   }
+
+   footer h3 {
+       text-align: center;
+   }
+
+
+   /* Inlog pagina */
+
+   form {
+       border: none;
+       padding: 2em;
+       margin: 1em;
+       background-color: #FCD900;
+       min-width: 15em;
+       max-width: 40em;
+       border-radius:0.5em;
+   }
+
+   fieldset {
+       border: none;
+       background-color: #FCD900;
+       border: none;
+       list-style-type: none;
+       position: relative;
+   }
+
+   label {
+       margin-bottom: 2em;
+   }
+
+   input {
+       display: block;
+   }
+
+   input[type="email"],
+   input[type="password"] {
+       padding: 1em;
+       width: 100%;
+
+   }
+
+   input[type="email"]:valid {
+       background-color: lightgreen;
+   }
+
+   input[type="password"]:valid {
+       background-color: lightgreen;
+   }
+
+   input[type="email"]:invalid:focus {
+       background-color: #FF7272;
+   }
+
+   input[type="password"]:invalid:focus {
+       background-color: #FF7272;
+   }
+
+   legend:first-of-type {
+       font-weight: bold;
+   }
+
+   input[type="submit"]:hover {
+       background-color: #E66F1F;
+   }
+
+   fieldset p {
+       margin-top: 3em;
+   }
+
+       fieldset p {
+           padding: 1em;
+           background-color: #E66F1F;
+           max-width: 16em;
+           border-radius: 0.3em;
+           color: white;
+       }
+
+       fieldset p a{
+           font-weight: bold;
+           color: white;
+       }
+
+   input[type="submit"] {
+       margin-top: 1em;
+       width: 8em;
+   }
+
+   /* breakpoint 1 */
+   @media (min-width:20em) and (max-width:40em) {
+       main img:first-of-type {
+           width: 100%
+       }
+
+       main img:nth-of-type(2) {
+           display: none;
+       }
+
+       main img:last-of-type {
+           display: none;
+       }
+
+       form {
+           max-width: 30em;
+       }
+   }
+
+   /* breakpoint 2 */
+   @media (min-width:40em) and (max-width:60em) {
+       main img:first-of-type {
+           display: none;
+       }
+
+       main img:nth-of-type(2) {
+           width: 100%;
+       }
+
+       main img:last-of-type {
+           display: none;
+       }
+   }
+
+   /* breakpoint 3 */
+   @media (min-width:60em) {
+       main img:first-of-type {
+           display: none;
+       }
+
+       main img:nth-of-type(2) {
+           display: none;
+       }
+
+       main img:last-of-type {
+           width: 100%;
+       }
+
+       input[type="email"],
+       input[type="password"] {
+           padding: 1em;
+       }
+
+       form {
+ margin-left: 20em;
+       }
+
+   }
