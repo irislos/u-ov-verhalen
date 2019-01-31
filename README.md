@@ -1,2 +1,2 @@
 # u-ov-verhalen
-Verhalen website voor U-OB
+Verhalen website voor U-OV
